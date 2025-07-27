@@ -1,0 +1,162 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurabh Srivastava | QA Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-down {
+    animation: fade-in-down 0.8s ease-out;
+  }
+</style>
+</head>
+<!-- 👇 Paste this full <body> over your current <body> section -->
+<body class="bg-slate-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Saurabh QA</h1>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+      <a href="about.html" class="hover:text-blue-600 transition">About</a>
+      <a href="blog.html" class="hover:text-blue-600 transition">Blog</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="text-center mt-20 animate-fade-in-down">
+    <h2 class="text-4xl font-extrabold mb-4 text-blue-800">Hi, I'm Saurabh Srivastava</h2>
+    <p class="text-lg">Creative QA Tester – Automation & Manual Testing Enthusiast</p>
+    <div class="mt-6 space-x-4">
+      <a href="mailto:test@example.com" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded shadow transition">Email Me</a>
+      <a href="assets/resume.pdf" download class="bg-gray-800 hover:bg-gray-900 text-white px-6 py-2 rounded shadow transition">Download Resume</a>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section class="mt-20 px-6 max-w-5xl mx-auto">
+  <h3 class="text-2xl font-semibold text-center mb-8">About Me</h3>
+  <div class="flex flex-col md:flex-row items-center gap-6 animate-fade-in-down">
+    
+    <!-- Profile Image -->
+    <div class="w-40 h-40 shrink-0">
+      <img src="assests\images\profile.jpg" alt="Saurabh Srivastava" class="rounded-full shadow-lg w-full h-full object-cover border-4 border-blue-300 hover:scale-105 transition duration-300">
+    </div>
+
+    <!-- About Text -->
+    <div class="text-center md:text-left">
+      <p class="text-gray-700 leading-relaxed">
+        I'm a passionate QA Engineer who blends precision with creativity. I explore automation tools, dig into the toughest bugs, 
+        and thrive in finding the hidden flaws in products. I genuinely enjoy collaborating with developers and cross-functional 
+        teams to ship high-quality features. Off work, I write poetry, sip coffee, and tinker with tech tools.
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Skills -->
+  <section class="mt-20 px-6 max-w-5xl mx-auto">
+    <h3 class="text-2xl font-semibold text-center mb-8">Skills & Tools</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-6">
+      <div class="bg-white p-4 rounded shadow text-center hover:scale-105 transition">Selenium</div>
+      <div class="bg-white p-4 rounded shadow text-center hover:scale-105 transition">Java</div>
+      <div class="bg-white p-4 rounded shadow text-center hover:scale-105 transition">Python</div>
+      <div class="bg-white p-4 rounded shadow text-center hover:scale-105 transition">Postman</div>
+      <div class="bg-white p-4 rounded shadow text-center hover:scale-105 transition">JIRA</div>
+      <div class="bg-white p-4 rounded shadow text-center hover:scale-105 transition">TestRail</div>
+      <div class="bg-white p-4 rounded shadow text-center hover:scale-105 transition">Jenkins</div>
+      <div class="bg-white p-4 rounded shadow text-center hover:scale-105 transition">GitHub</div>
+      <div class="bg-white p-4 rounded shadow text-center hover:scale-105 transition">Cypress</div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="mt-20 px-6 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Experience</h3>
+    <ul class="space-y-6 border-l-2 border-blue-500 pl-6">
+      <li>
+        <div class="text-blue-600 font-semibold">QA Engineer at ABC Tech</div>
+        <div class="text-sm text-gray-500">2022 - Present</div>
+        <p>Built automation suites with Selenium and integrated with Jenkins pipelines.</p>
+      </li>
+      <li>
+        <div class="text-blue-600 font-semibold">Manual Tester at XYZ Corp</div>
+        <div class="text-sm text-gray-500">2020 - 2022</div>
+        <p>Planned and executed manual testing across mobile and web applications in Agile setup.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section class="mt-20 px-6 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Education</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-bold">B.Tech in Computer Science</h4>
+        <p class="text-sm text-gray-600">XYZ University, 2019</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="mt-14 px-6 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Certifications</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-bold">ISTQB CTFL</h4>
+        <p class="text-sm text-gray-600">Certified in 2020</p>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-bold">Agile Testing Fundamentals</h4>
+        <p class="text-sm text-gray-600">Certified by TestAcademy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="mt-20 px-6 max-w-4xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Achievements</h3>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Recognized as “Best Bug Hunter” at XYZ Corp (2022)</li>
+      <li>Completed 100 Days of Code QA Challenge</li>
+      <li>Finalist in Testathon India Hackathon</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section class="mt-20 px-6 max-w-5xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-6 text-center">Projects</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-bold text-blue-800">E-commerce Website Testing</h4>
+        <p class="mb-2">Tested user journey, payment systems, and checkout automation with Selenium & TestNG.</p>
+        <a href="https://github.com/yourusername/ecommerce-testing" target="_blank" class="text-blue-600 hover:underline text-sm">🔗 View on GitHub</a>
+      </div>
+      <div class="bg-white p-4 rounded shadow">
+        <h4 class="font-bold text-blue-800">API Testing with Postman</h4>
+        <p class="mb-2">Built automated API tests for product and auth endpoints using Postman & Newman.</p>
+        <a href="https://github.com/yourusername/api-postman-tests" target="_blank" class="text-blue-600 hover:underline text-sm">🔗 View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-24 text-center text-sm text-gray-400 mb-4">
+    Contact: <a href="mailto:test@example.com" class="hover:underline">test@example.com</a><br/>
+    © 2025 Saurabh Srivastava – All rights reserved.
+  </footer>
+</body>
+</html>
