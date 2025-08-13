@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exploring Postman</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 font-sans text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Saurabh QA</h1>
+    <div class="space-x-4">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../blog.html">Blog</a>
+    </div>
+  </nav>
+
+  <!-- Blog Content -->
+  <main class="max-w-3xl mx-auto px-6 py-10 bg-white mt-6 rounded shadow">
+    <h1 class="text-3xl font-bold text-blue-800 mb-4">Exploring Postman for API Testing</h1>
+    <p class="text-sm text-gray-500 mb-8">Published on July 27, 2025 • 5 min read</p>
+
+    <p class="mb-4">
+      When I first heard the term API testing, I had no idea what it meant. 
+      I was learning manual testing and exploring tools like JIRA and Agile Central, 
+      but APIs felt like something only developers dealt with. Still, I was curious. 
+      I kept hearing how important API testing is—especially for automation testers—and I wanted to understand it for myself.
+      So I decided to start small. No pressure, no fancy setups—just a simple goal: <b>figure out what an API is and how to test it.</b>
+    </p>
+    
+    <article class="mb-4">
+    <h4 class="mb-4"><b>🧠 Understanding APIs:</b></h4>
+
+    <p class="mb-4">I started by reading about APIs online. The explanation that clicked for me was this:<br>
+    <strong>An API is like a messenger between two software systems.</strong><br>
+    It lets one application talk to another. For example, when you use a weather app, it doesn’t generate the weather—it fetches it from a server using an API.</p>
+
+    <p class="mb-4">That made sense. But how do you test something that’s invisible? That’s where I discovered <strong>Postman</strong>.</p>
+
+    <h2>🛠️ Discovering Postman</h2>
+    <p class="mb-4">Postman kept popping up in tutorials and forums. People said it was beginner-friendly, so I downloaded it from <a href="https://www.postman.com" target="_blank">postman.com</a> and started exploring.</p>
+
+    <p class="mb-4">At first, the interface looked overwhelming—tabs, headers, body, params—but I took it one step at a time. I created a free account and opened a new request. I didn’t know what to test, so I Googled “free APIs for practice” and found <a href="https://jsonplaceholder.typicode.com" target="_blank">JSONPlaceholder</a>.</p>
+
+    <p>My first test was a <strong>GET request</strong> to this URL:<br>
+    <code>https://jsonplaceholder.typicode.com/posts/1</code></p>
+
+    <p class="mb-4">I clicked <strong>Send</strong>, and boom—there was a response! A bunch of JSON data appeared on the screen. It felt like magic. I had just fetched data from a server using an API.</p>
+
+    <h2 class="mb-4"><b>🔍 Learning About Requests and Responses</b></h2>
+    <p class="mb-4">Once I got comfortable with GET requests, I wanted to understand other types:</p>
+    <ul>
+      <li><strong>POST</strong>: Used to send data to the server (like submitting a form)</li>
+      <li><strong>PUT</strong>: Used to update existing data</li>
+      <li><strong>DELETE</strong>: Used to remove data</li>
+    </ul>
+
+    <p class="mb-4">I tried sending a POST request with a sample payload:</p>
+    <pre><code>{
+  "title": "Hello API",
+  "body": "This is my first POST request",
+  "userId": 1
+}</code></pre>
+
+    <p class="mb-4">I added this to the <strong>Body</strong> tab in Postman, selected <em>raw</em> and <em>JSON</em>, and hit Send. The response showed the data I had sent, along with a new ID. That was exciting—I was interacting with the API like a real user!</p>
+
+    <p class="mb-4">I also learned to check the <strong>status codes</strong>:</p>
+    <ul>
+      <li><code>200 OK</code> means success</li>
+      <li><code>201 Created</code> means a new resource was made</li>
+      <li><code>404 Not Found</code> means the endpoint doesn’t exist</li>
+      <li><code>500 Internal Server Error</code> means something went wrong on the server</li>
+    </ul>
+
+    <h2  class="mb-4">🧪 Testing Payloads and Edge Cases</h2>
+    <p class="mb-4">As I practiced more, I started experimenting with different payloads—changing values, leaving fields empty, sending invalid data. I wanted to see how the API would respond. Would it reject the request? Would it return an error?</p>
+
+    <p class="mb-4">Postman made it easy to test all these scenarios. I didn’t need to write any code—I just changed the input and observed the output.</p>
+
+    <p class="mb-4">I also explored the <strong>Tests</strong> tab in Postman, where you can write simple JavaScript to validate responses. For example:</p>
+    <pre><code>pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});</code></pre>
+
+    <p class="mb-4">This helped me automate basic checks and understand how testing logic works.</p>
+
+    <h2 class="mb-4"><strong>🌱 What I’ve Learned So Far </strong></h2>
+    <p class="mb-4">Looking back, I’m glad I started learning API testing through Postman. It taught me:</p>
+    <ul>
+      <li>How APIs work behind the scenes</li>
+      <li>How to send different types of requests (GET, POST, PUT, DELETE)</li>
+      <li>How to read and understand responses</li>
+      <li>How to test payloads and handle edge cases</li>
+      <li>How to write basic tests to validate responses</li>
+    </ul>
+
+    <p class="mb-4">Most importantly, it gave me confidence. I no longer feel lost when someone mentions APIs or backend testing. I know how to test endpoints, analyze responses, and contribute meaningfully to a testing team.</p>
+
+    <h2 class="mb-4"><strong>🌟 Final Thoughts </strong></h2>
+    <p class="mb-4">If you’re just starting out in testing, don’t be afraid of APIs. You don’t need to be a developer to understand them. Tools like Postman make it easy to learn by doing. Start with simple requests, explore free APIs, and build your understanding step by step.</p>
+
+    <p class="mb-4">API testing isn’t just a skill—it’s a superpower for testers. And Postman is the perfect place to begin your journey.</p>
+
+    <p  class="mb-4"><strong>Happy testing! 🧪✨</strong></p>
+  </article>
+
+    <!-- Reusable Comment Form Component -->
+    <div data-include="../components/comment-form.html"></div>
+
+    <!-- JavaScript to inject it -->
+    <script src="../scripts/include.js"></script>
+    </div>
+  </main>
+</body>
+</html>

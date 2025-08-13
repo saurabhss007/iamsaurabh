@@ -1,0 +1,112 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Saurabh QA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  @keyframes fade-in-down {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fade-in-down {
+    animation: fade-in-down 1s ease-out;
+  }
+</style>
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold">Saurabh QA</h1>
+    <div class="space-x-4">
+      <a href="index.html" class="hover:text-blue-600 transition">Home</a>
+      <a href="about.html" class="hover:text-blue-600 transition">About</a>
+      <a href="blog.html" class="hover:text-blue-600 transition">Blog</a>
+    </div>
+  </nav>
+
+  <!-- Passion Section -->
+  <section class="max-w-3xl mx-auto mt-10 px-4 text-center animate-fade-in-down">
+    <h2 class="text-3xl font-bold text-blue-800 mb-4">Life Beyond Testing</h2>
+    <p class="text-lg leading-relaxed">
+      Outside the test cases, logs, and frameworks, I'm someone who finds joy in the smallest things —
+      from writing late-night poetry to sipping the perfect cup of coffee. To me, creativity and quality go hand in hand.
+      Whether it's spotting a hidden bug or a beautiful sunset — I always notice the details.
+    </p>
+  </section>
+  <!-- Connect With Me -->
+<section class="mt-16 max-w-3xl mx-auto px-6 text-center">
+  <h3 class="text-2xl font-semibold mb-4">Connect With Me</h3>
+  <div class="flex justify-center items-center space-x-6 text-3xl">
+
+    <!-- LinkedIn -->
+    <a href="https://linkedin.com/in/saurabh-srivastava-2b80b919b" target="_blank" class="hover:text-blue-600 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-8 h-8">
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/saurabhss007" target="_blank" class="hover:text-gray-800 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub" class="w-8 h-8">
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/__iamsaurabh__" target="_blank" class="hover:text-pink-500 transition">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" class="w-8 h-8">
+    </a>
+
+  </div>
+</section>
+  <!-- Hobbies Section -->
+  <section class="mt-16 max-w-4xl mx-auto px-6">
+    <h3 class="text-2xl font-semibold text-center mb-6">What I Love</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+      <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">✍️ <br> Writing Poetry</div>
+      <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">☕ <br> Coffee Time</div>
+      <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">📚 <br> Reading</div>
+      <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">🌍 <br> Traveling</div>
+    </div>
+  </section>
+
+  <!-- Life in Photos -->
+  <section class="mt-16 max-w-5xl mx-auto px-6 text-center">
+    <h3 class="text-2xl font-semibold text-center mb-6">My Life in Photos</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="assests\images\image1.jpg" alt="Life photo" class="rounded-lg shadow object-cover w-full h-64">
+      <img src="assests\images\image2.jpg" alt="Life photo" class="rounded-lg shadow object-cover w-full h-64">
+      <img src="assests\images\image3.jpg" alt="Life photo" class="rounded-lg shadow object-cover w-full h-64">
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="mt-20 max-w-3xl mx-auto px-6 text-center">
+  <h3 class="text-2xl font-semibold mb-4">My World in Motion</h3>
+  <p class="text-sm text-gray-600 mb-4">A glimpse into what I love...</p>
+
+  <div class="flex justify-center">
+    <div class="w-full md:w-[720px] aspect-video rounded shadow overflow-hidden">
+      <iframe
+        class="w-full h-full"
+        src="https://www.youtube.com/embed/tqbT1UWyDcs?autoplay=1&mute=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+  <!-- Quote Block -->
+  <section class="mt-20 mb-10 px-6 max-w-3xl mx-auto text-center">
+    <h3 class="text-2xl font-semibold mb-4">A Thought I Live By</h3>
+    <blockquote class="font-serif italic text-blue-700 text-xl animate-fade-in-down">
+      “Quality is never an accident. It is always the result of intelligent effort.”
+    </blockquote>
+  </section>
+
+</body>
+</html>
